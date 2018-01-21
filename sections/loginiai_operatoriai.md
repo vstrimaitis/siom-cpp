@@ -33,3 +33,11 @@ Loginio "arba" teisingumo lentelė:
 | `true`  | `false` | `true`    |
 | `false` | `true`  | `true`    |
 | `false` | `false` | `false`   |
+
+## Kur naudojami loginiai operatoriai?
+Loginius operatorius galima naudoti įvairiose vietose, tačiau dažniausiai juos sutiksite aprašydami įvairias sąlygas, pavyzdžiui, sąlyginiuose sakiniuose. Tarkime, jei norite išspausdinti tekstą "Valio" tada ir tik tada, kai kintamojo `x` reikšmė didesnė už 10, bet neviršija 15 (kitaip tariant, `x` didesnis už 10 **IR** nedidesnis už 15), tai rašytumėte tokį kodą:
+```
+if (x > 10 && x <= 15) {
+    cout << "Valio";
+}
+```
