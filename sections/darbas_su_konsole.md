@@ -1,3 +1,4 @@
+[< Grįžti į turinį](../cpp_tutorial.md)
 # Darbas su konsole
 Konsolė - tai pirmas ir dažniausiai pradedančiųjų programuotojų naudojamas įrankis bendravimui su naudotoju. Šiame skyriuje apžvelgsime, kaip C++ programavimo kalboje išspausdinti duomenis į konsolę bei nuskaityti naudotojo įvestus duomenis iš konsolės.
 

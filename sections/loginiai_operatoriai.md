@@ -1,3 +1,4 @@
+[< Grįžti į turinį](../cpp_tutorial.md)
 # Loginiai operatoriai
 Šiame skyriuje apžvelgiami C++ loginiai operatoriai.
 
