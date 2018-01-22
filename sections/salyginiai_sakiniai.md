@@ -1,4 +1,4 @@
-[< Grįžti į turinį](../cpp_tutorial.md)
+[< Grįžti į turinį](../README.md)
 # Sąlyginiai sakiniai
 Šis skyrius skirtas susipažinimui su sąlyginiais sakiniais ir kaip juos užrašyti C++ kalboje.
 

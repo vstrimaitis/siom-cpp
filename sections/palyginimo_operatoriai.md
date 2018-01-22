@@ -1,4 +1,4 @@
-[< Grįžti į turinį](../cpp_tutorial.md)
+[< Grįžti į turinį](../README.md)
 # Palyginimo operatoriai
 Palyginimo operatoriai naudojami palyginti dvi reikšmes tarpusavyje. Šiame skyriuje apžvelgsime palyginimo operatorius, kuriuos palaiko C++ programavimo kalba.
 

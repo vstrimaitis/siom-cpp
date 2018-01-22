@@ -10,6 +10,6 @@ Pagalbinė medžiaga suskirstyta į šiuos skyrius:
 * [Sąlyginiai sakiniai](sections/salyginiai_sakiniai.md)
 * Operatoriai:
     - [Palyginimo operatoriai](sections/palyginimo_operatoriai.md)
-    - [Loginiai operatoriai](sections/salyginiai_sakiniai.md)
+    - [Loginiai operatoriai](sections/loginiai_operatoriai.md)
 * [Darbas su konsole](sections/darbas_su_konsole.md)
 * ...

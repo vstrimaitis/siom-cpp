@@ -1,4 +1,4 @@
-[< Grįžti į turinį](../cpp_tutorial.md)
+[< Grįžti į turinį](../README.md)
 # Įvadas į C++ programavimo kalbą
 Šis skyrius skirtas tik supažindinti skaitytojus su C++ programavimo kalba per daug nelendant į technines detales. 
 
