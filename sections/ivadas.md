@@ -45,17 +45,23 @@ Prieš pradedant programuoti reikia šiek tiek pasiruošimo. Šiame skyriuje bus
 Visų pirma reikia įsidiegti programavimo aplinką. Štai kaip tai padaryti:
 1. Įsidiekite Code::Blocks:
     * Nueikite į šį puslapį: http://www.codeblocks.org/downloads/26.
-    * Pasirinkite tinkamą diegimo failą pagal savo kompiuterio operacinę sistemą. Jei naudojate Windows operacinę sistemą, rekomenduojama siųsti failą `codeblocks-XX.XXmingw-setup.exe`, nes jis įrašys ne tik programavimo aplinką, bet ir kompiliatorių. ![Code::Blocks parsisiuntimas](images/codeblocks_download.png)
-    * Sekite diegimo gido instrukcijas (kai reiks rinktis diegimo tipą, pasirinkite *Full*). ![Code::Blocks diegimas](images/codeblocks_install.png)
+    * Pasirinkite tinkamą diegimo failą pagal savo kompiuterio operacinę sistemą. Jei naudojate Windows operacinę sistemą, rekomenduojama siųsti failą `codeblocks-XX.XXmingw-setup.exe`, nes jis įrašys ne tik programavimo aplinką, bet ir kompiliatorių.
+    ![Code::Blocks parsisiuntimas](images/codeblocks_download.png)
+    * Sekite diegimo gido instrukcijas (kai reiks rinktis diegimo tipą, pasirinkite *Full*).
+    ![Code::Blocks diegimas](images/codeblocks_install.png)
     * Pirmą kartą leidžiant Code::Blocks atsidarys langas, prašantis pasirinkti kompiliatorių. Įsitikinkite, kad pasirinktas `GNU GCC Compiler` (turėtų būti pats pirmas pasirinkimas) ir spauskite `OK`.
 2. Susikurkite konsolinės aplikacijos projektą:
     * Atsidariusiame Code::Blocks lange spauskite `File -> New -> Project...`
-    * Pasirinkite `Console application` ![Projekto tipo pasirinkimas](images/codeblocks_projectType.png)
+    * Pasirinkite `Console application`
+    ![Projekto tipo pasirinkimas](images/codeblocks_projectType.png)
     * Atsidariusiame lange spauskite `Next`
     * Pasirinkite C++ kalbą ir spauskite `Next`
-    * Įveskite kokį nors projekto pavadinimą bei pasirinkite direktoriją, kurioje norite išsaugoti projektą ![Projekto vardo pasirinkimas](images/codeblocks_projectName.png)
-    * Kitame lange įsitikinkite, kad parinktas teisingas kompiliatorius ir spauskite `Finish` ![Kompiliatoriaus pasirinkimas](images/codeblocks_compiler.png)
-    * Kairėje lango pusėje turėtumėte matyti sukurtą projektą. Praskleidus jį pamatysite, kad Code::Blocks jums sukūrė vieną failą - `main.cpp`. Tai - pagrindinis jūsų programos failas. ![Sukurtas projektas](images/codeblocks_main.png)
+    * Įveskite kokį nors projekto pavadinimą bei pasirinkite direktoriją, kurioje norite išsaugoti projektą
+    ![Projekto vardo pasirinkimas](images/codeblocks_projectName.png)
+    * Kitame lange įsitikinkite, kad parinktas teisingas kompiliatorius ir spauskite `Finish`
+    ![Kompiliatoriaus pasirinkimas](images/codeblocks_compiler.png)
+    * Kairėje lango pusėje turėtumėte matyti sukurtą projektą. Praskleidus jį pamatysite, kad Code::Blocks jums sukūrė vieną failą - `main.cpp`. Tai - pagrindinis jūsų programos failas.
+    ![Sukurtas projektas](images/codeblocks_main.png)
 
 ### Pirma C++ programa
 Atsidarykite Code::Blocks projektą, kurį sukūrėte prieš tai buvusiame žingsnyje. Tada sekite šiuos žingsnius:
@@ -70,8 +76,10 @@ Atsidarykite Code::Blocks projektą, kurį sukūrėte prieš tai buvusiame žing
         return 0;
     }
     ```
-2. Paleiskite programą spausdami mygtuką `Build and run`. ![Programos paleidimas](images/codeblocks_buildAndRun.png)
-3. Jei viskas gerai, turėtumėte pamatyti konsolės langą su tekstu `Hello world!`. ![Pirma programa](images/codeblocks_console.png)
+2. Paleiskite programą spausdami mygtuką `Build and run`.
+![Programos paleidimas](images/codeblocks_buildAndRun.png)
+3. Jei viskas gerai, turėtumėte pamatyti konsolės langą su tekstu `Hello world!`.
+![Pirma programa](images/codeblocks_console.png)
 
 Sveikiname, jūs parašėte ir paleidote pirmą savo C++ programą!
 
