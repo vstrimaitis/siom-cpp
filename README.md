@@ -12,4 +12,10 @@ Pagalbinė medžiaga suskirstyta į šiuos skyrius:
     - [Palyginimo operatoriai](sections/palyginimo_operatoriai.md)
     - [Loginiai operatoriai](sections/loginiai_operatoriai.md)
 * [Darbas su konsole](sections/darbas_su_konsole.md)
+* [Tipai](sections/tipai.md)
 * ...
+
+
+
+---
+Medžiagą paruošė, pildo ir atnaujina Vytautas Strimaitis (vstrimaitis@gmail.com), 2018
