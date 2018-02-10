@@ -13,6 +13,7 @@ Pagalbinė medžiaga suskirstyta į šiuos skyrius:
     - [Loginiai operatoriai](sections/loginiai_operatoriai.md)
 * [Darbas su konsole](sections/darbas_su_konsole.md)
 * [Tipai](sections/tipai.md)
+* [Simboliai](sections/simboliai.md)
 * ...
 
 
