@@ -18,7 +18,7 @@ C++ programavimo kalba palaiko trijų rušių ciklus:
 
 Apie kiekvieną iš jų pakalbėsime toliau.
 
-## `while` ciklas
+### `while` ciklas
 Ciklas `while` naudojamas, kuomet norime kartoti tam tikrą kodą tol, kol tenkinama tam tikra sąlyga. Jo sintaksė yra tokia:
 ```
 while (sąlyga) {
@@ -87,3 +87,24 @@ Taigi, kodas vyks taip:
 10. Ar `i < 5`? Ne, todėl cikle esantis kodas daugiau nebevykdomas.
 
 Taigi iš viso kodas, esantis tarp riestinių skliaustų bus įvykdomas penkis kartus (kai `i = 0`, kai `i = 1`, kai `i = 2`, kai `i = 3` bei kai `i = 4`).
+
+## Kurį ciklą pasirinkti?
+Skirtingiems uždaviniams dažniausiai yra patogūs skirtingi ciklai, nors iš tikro bet kurį ciklą galima perrašyti kitu ciklu. Dažniausiai laikomasi tokių pasiūlymų:
+* Jei iš anksto žinome, kiek kartų reikės kartoti ciklą, geriausia naudoti `for` ciklą.
+* Jei žinome, kad ciklo kodą būtinai reikia įvykdyti nors kartą, dažnai patogus yra `do...while` ciklas.
+* Beveik visais kitais atvejais patogiausias yra `while` ciklas.
+
+## Pavojai
+Naudojant ciklus gali kilti ir tam tikrų pavojų. Konkrečiai šnekant, galima sukurti taip vadinamą **amžinąjį ciklą** - tokį ciklą, kuris niekada nesibaigs. Pavyzdžiui, šie du kodo gabaliukai sukuria amžinąjį ciklą, kuris "užlaužia" programą:
+```
+for(int i = 0; i < 2; i--) {
+    cout << "Labas" << endl;
+}
+```
+```
+int x = 0;
+while(x < 5) {
+    cout << "O ne!" << endl;
+}
+```
+Tiek pirmame, tiek antrame cikluose niekada nebus įgyvendintos ciklo sąlygos, tad ciklai suksis amžinai. Dėl šios priežasties visada būtina atidžiai sužiūrėti savo kodą, kad nepaliktumėte tokių klaidų!
