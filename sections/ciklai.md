@@ -108,3 +108,44 @@ while(x < 5) {
 }
 ```
 Tiek pirmame, tiek antrame cikluose niekada nebus įgyvendintos ciklo sąlygos, tad ciklai suksis amžinai. Dėl šios priežasties visada būtina atidžiai sužiūrėti savo kodą, kad nepaliktumėte tokių klaidų!
+
+## Programos vykdymo eiliškumo valdymas cikluose
+Ciklų viduje galima naudoti du naujus raktažodžius - `break` ir `continue`. Jie skirti rankiniu būdu įsiterpti į ciklo vykdymą ir kažkiek pakeisti jo eiliškumą.
+
+### `break`
+`break` yra naudojamas, kai norima nutraukti ciklą prieš tikrinant jo sąlygą. Pavyzdžiui, tarkime turime tokį kodą:
+```
+int kiek = 0;
+int x = 1024;
+while(x % 2 == 0) {
+    x /= 2;
+    kiek++;
+    if (kiek > 5) {
+        break;
+    }
+}
+cout << kiek << endl;
+```
+Šis kodas bando dalinti kintamąjį `x` iš dviejų tol, kol tokia dalyba yra įmanoma. Be to, dar laikomas kintamasis `kiek`, kuris didėja vienetu su kiekvienu ciklo įvykdymu. Sakinys `if (kiek > 5) { break; }` užtikrina, kad, jei `kiek` viršys penkis, ciklas bus nutrauktas (net jei sąlyga `x % 2 == 0` vis dar tenkinama). Taigi šiuo atveju, kodas spausdins `6`, nors iš tikro `1024` iš dviejų galima padalinti 10 kartų.
+
+### `continue`
+`continue` yra naudojamas, kai norima grįžti į ciklo pradžią dar nepabaigus vykdyti ciklo kodo. Pavyzdžiui, norime nuskaityti skaičius iš konsolės iki pirmo vieneto, ir tada skaičių 10 padalinti iš kiekvieno iš įvestų skaičių ir išvesti rezultatą. Kodas galėtų atrodyti taip:
+```
+int sk;
+do {
+    cin >> sk;
+    cout << 10 / sk << endl;
+} while(sk != 1);
+```
+Deja, šis kodas yra pavojingas dėl dalybos - juk vartotojas gali įvesti nulį, o bandant dalinti iš nulio nieko gero nebus! Tarkime, nusprendžiame nieko nespausdinti ir tiesiog toliau tęsti darbą, kai vartotojas įveda nulį. Čia gali padėti raktažodis `continue`. Su juo kodas atrodytų taip:
+```
+int sk;
+do {
+    cin >> sk;
+    if (sk == 0) {
+        continue;
+    }
+    cout << 10 / sk << endl;
+} while(sk != 1);
+```
+Šiuo atveju prieš dalinant iš įvesto skaičiaus visų pirma patikriname, ar skaičius, iš kurio daliname (`sk`) nėra lygus nuliui. Jei taip yra, grįžtame tiesiai į ciklo pradžią panaudoję raktažodį `continue`. Taip padarę išvengsime dalybos iš nulio!
