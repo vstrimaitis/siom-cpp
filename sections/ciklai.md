@@ -85,3 +85,5 @@ Taigi, kodas vyks taip:
 8. ...
 9. Kintamojo `i` reikšmė padidinama vienetu (dabar `i = 5`).
 10. Ar `i < 5`? Ne, todėl cikle esantis kodas daugiau nebevykdomas.
+
+Taigi iš viso kodas, esantis tarp riestinių skliaustų bus įvykdomas penkis kartus (kai `i = 0`, kai `i = 1`, kai `i = 2`, kai `i = 3` bei kai `i = 4`).
