@@ -53,4 +53,35 @@ do {
 ```
 
 ### `for` ciklas
-Informacija ruošiama...
+`for` ciklas dažniausiai naudojamas tada, kai iš anksto žinome, kiek kartų norime kartoti tam tikrą kodą. Šio ciklo sintaksė tokia:
+```
+for(ciklo skaitliuko sukūrimas; sąlyga; ciklo skaitliuko reikšmės keitimas) {
+    // kodas
+}
+```
+Šį ciklą geriau paaiškinti konkrečiu pavyzdžiu. Tarkime, kad norime nuskaityti penkis skaičius iš konsolės ir išvesti jų sumą. Tai galima pasiekti tokiu kodu:
+```
+int suma = 0;
+for (int i = 0; i < 5; i++) {
+    int a;
+    cin >> a;
+    suma += a;
+}
+cout << suma << endl;
+```
+Panagrinėkime kodą:
+* `int i = 0` nustato, kad ciklo kintamasis bus pavadintas `i` ir jo pradinė reikšmė bus lygi nuliui.
+* `i < 5` reiškia, kad cikle esantis kodas bus vykdomas tol, kol `i` reikšmė bus mažesnė už 5. Ši sąlyga tikrinama kiekvieną kartą prieš vykdant ciklo kodą.
+* `i++` reiškia, kad kiekvieną kartą įvykdžius ciklo kodą, kintamojo `i` reikšmė bus padidinama vienetu.
+
+Taigi, kodas vyks taip:
+1. Sukuriamas kintamasis `i` su reikšme `0`
+2. Ar `i < 5`? Taip, todėl vykdome kodą.
+3. Įvykdomas tarp riestinių skliaustų esantis kodas.
+4. Kintamojo `i` reikšmė padidinama vienetu (dabar `i = 1`).
+5. Ar `i < 5`? Taip, todėl vykdome kodą.
+6. Įvykdomas tarp riestinių skliaustų esantis kodas.
+7. Kintamojo `i` reikšmė padidinama vienetu (dabar `i = 2`).
+8. ...
+9. Kintamojo `i` reikšmė padidinama vienetu (dabar `i = 5`).
+10. Ar `i < 5`? Ne, todėl cikle esantis kodas daugiau nebevykdomas.
