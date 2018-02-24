@@ -14,7 +14,7 @@ Pagalbinė medžiaga suskirstyta į šiuos skyrius:
 * [Darbas su konsole](sections/darbas_su_konsole.md)
 * [Tipai](sections/tipai.md)
 * [Simboliai](sections/simboliai.md)
-* ...
+* [Ciklai](sections/ciklai.md)
 
 
 
