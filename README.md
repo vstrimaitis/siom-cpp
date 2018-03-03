@@ -15,6 +15,7 @@ Pagalbinė medžiaga suskirstyta į šiuos skyrius:
 * [Tipai](sections/tipai.md)
 * [Simboliai](sections/simboliai.md)
 * [Ciklai](sections/ciklai.md)
+* [Masyvai](sections/masyvai.md)
 
 
 
