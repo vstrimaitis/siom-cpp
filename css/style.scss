@@ -53,6 +53,10 @@ body {
 	width: 100%
 }
 
+html, body {
+    height: auto;
+}
+
 a, a:active {
 	color: $light-blue;
 	text-decoration: none;
