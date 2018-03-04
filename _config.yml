@@ -6,22 +6,10 @@ baseurl: ""
 url: "http://vstrimaitis.github.io"
 title_description: <p>Sveiki! Čia rasite pagalbinę medžiagą, padėsiančią mokytis C++ programavimo kalbos. Medžiaga skirta Šeštadieninės Informatikos Olimpiadininkų Mokyklos jaunesniųjų grupės moksleiviams.</p><p><strong>Pastaba.</strong> Medžiaga vis dar ruošiama, tad ne visi skyriai baigti. Jei rasite netikslumų / neaiškumų / klaidų - praneškite <i class="far fa-smile"></i></p>
 title_image: "https://imgur.com/bQ62w5B.png"
-#google_analytics: "UA-20365477-4"
-#disqus_account: cartenoire
 github_repository: https://github.com/vstrimaitis/siom-cpp
-#addthis_id: ra-513c6fa83da6ec67
 post_limit: 5
 
-# Social usernames/URLs
-#twitter_username: _jacobtomlinson
 github_username:  vstrimaitis
-#instagram_username: 
-#reddit_username: 
-#linkedin_link: http://carte-noire.jacobtomlinson.co.uk/
-#google_plus_link: http://carte-noire.jacobtomlinson.co.uk/
-#stackoverflow_link: http://carte-noire.jacobtomlinson.co.uk/
-#xing_link:
-#facebook_link:
 
 # Footer
 footer_left: Parengė Vytautas Strimaitis
