@@ -288,7 +288,7 @@ ul {
 	}
 
 	.author-text {
-		text-align: center;
+		text-align: left;
 		margin-top: 30px;
 
 		b {
@@ -301,11 +301,11 @@ ul {
 	}
 
 	.articles {
-		text-align: center;
+		text-align: left;
 		font-size: 20px;
 
 		h2 {
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 			color: $light-blue;
 			font-size: 26px;
 		}

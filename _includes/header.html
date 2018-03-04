@@ -4,7 +4,8 @@
 
     <ul class="pages">
       <li><a href="{{ site.baseurl }}/"><i class="fa fa-home"></i> Pagrindinis</a></li>
-      {% for post in site.posts %}
+      {% assign posts_by_date = site.posts | sort: 'date' %}
+      {% for post in posts_by_date %}
           <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
