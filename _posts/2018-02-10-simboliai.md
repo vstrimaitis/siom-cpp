@@ -18,7 +18,7 @@ Gali atrodyti keista, tačiau kompiuteris iš tikrųjų su tokiais dalykais kaip
 ## ASCII lentelė
 Žemiau pateikta taip vadinama **ASCII lentelė**:
 
-![ASCII lentelė](/images/ascii_table.jpg)
+![ASCII lentelė]({{site.baseurl}}/images/ascii_table.jpg)
 
 **Pastaba:** čia pateikta lentelė nėra pilna. Kaip galima pastebėti, joje trūksta simbolių su kodais nuo 0 iki 31. Šie simboliai yra nespausdinami, todėl kol kas į juos tiesiog nekreipsime dėmesio.
 
