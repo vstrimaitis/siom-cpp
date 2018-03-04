@@ -899,3 +899,12 @@ td{
     padding: 2px;
     border:1px solid $dark-blue;;
 }
+
+.rouge-table { 
+    margin: 0;
+}
+
+code.hljs {
+    white-space: pre;
+    overflow-x: auto;
+}

@@ -1,18 +1,12 @@
 ---
-layout:     post
+layout:     lesson
 title:      Darbas su konsole
-date:       2018-03-04 21:46:00
+date:       2018-02-10 12:22:00
 author:     Vytautas Strimaitis
 summary:    Šiame skyriuje išmoksime dirbti su konsole.
 categories: teorija
-thumbnail:  terminal #code
-#tags:
-# - welcome
-# - to
-# - carte
-# - noire
+thumbnail:  terminal
 ---
-
 # Darbas su konsole
 Konsolė - tai pirmas ir dažniausiai pradedančiųjų programuotojų naudojamas įrankis bendravimui su naudotoju. Šiame skyriuje apžvelgsime, kaip C++ programavimo kalboje išspausdinti duomenis į konsolę bei nuskaityti naudotojo įvestus duomenis iš konsolės.
 
@@ -47,7 +41,7 @@ cout << x << " " << y << endl; // išveda 10 ir 15, atskirtus tarpais, užbaigia
 
 Šis kodas išspausdina:
 
-{% highlight c++ %}
+{% highlight plaintext %}
 Labas
 10!10 15
 
@@ -73,7 +67,7 @@ cout << fixed << setprecision(6) << penkiolika << endl;
 
 Šis kodas spausdina:
 
-{% highlight c++ %}
+{% highlight plaintext %}
 3.14
 3.14000
 15

@@ -18,14 +18,13 @@ make-smaller-titles: true
             <div class="author-text">
                 {{ site.title_description }}
             </div>
-
-            {% include social_links.html %}
           </div>
+          <!-- Add ToC here -->
           <div class="col-md-12 main content-panel">
 
             <div class="articles">
 
-              <h2>Latest Articles</h2>
+              <h2>Naujausi įrašai</h2>
 
               <ul>
                   {% for post in site.posts limit: site.post_limit %}
@@ -36,9 +35,6 @@ make-smaller-titles: true
                       </li>
 
                   {% endfor %}
-                  <li>
-                      <small><i><a href="{{ site.baseurl }}/posts/">more...</a></i></small>
-                  </li>
               </ul>
 
             </div>
