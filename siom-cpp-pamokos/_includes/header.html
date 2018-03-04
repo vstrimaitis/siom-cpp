@@ -1,0 +1,15 @@
+<nav id="my-menu">
+  <div>
+    <p>{{ site.title }}</p>
+
+    <ul class="pages">
+      <li><a href="{{ site.baseurl }}/"><i class="fa fa-home"></i> Pagrindinis</a></li>
+      {% for post in site.posts %}
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <!-- {% include social_links.html %} -->
+  </div>
+</nav>
+<div class="menu-button" href="#menu"><i class="fa fa-bars"></i></div>
