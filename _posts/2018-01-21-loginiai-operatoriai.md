@@ -1,4 +1,12 @@
-[< Grįžti į turinį](../README.md)
+---
+layout:     lesson
+title:      Loginiai operatoriai
+date:       2018-01-21 23:32:00
+author:     Vytautas Strimaitis
+summary:    Šiame skyriuje apžvelgiami C++ loginiai operatoriai.
+categories: teorija
+thumbnail:  logical
+---
 # Loginiai operatoriai
 Šiame skyriuje apžvelgiami C++ loginiai operatoriai.
 
@@ -40,8 +48,9 @@ Loginio "arba" teisingumo lentelė:
 
 ## Kur naudojami loginiai operatoriai?
 Loginius operatorius galima naudoti įvairiose vietose, tačiau dažniausiai juos sutiksite aprašydami įvairias sąlygas, pavyzdžiui, sąlyginiuose sakiniuose. Tarkime, jei norite išspausdinti tekstą "Valio" tada ir tik tada, kai kintamojo `x` reikšmė didesnė už 10, bet neviršija 15 (kitaip tariant, `x` didesnis už 10 **IR** nedidesnis už 15), tai rašytumėte tokį kodą:
-```
+
+{% highlight c++ %}
 if (x > 10 && x <= 15) {
     cout << "Valio";
 }
-```
+{% endhighlight %}

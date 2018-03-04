@@ -1,0 +1,34 @@
+# Site settings
+title: C++ pagalba
+email: vstrimaitis@gmail.com
+description: C++ pagalbinė medžiaga, skirta Šeštadieninės Informatikos Olimpiadininkų Mokyklos pradedančiųjų grupės mokiniams.
+baseurl: ""
+url: "http://vstrimaitis.github.io"
+title_description: <p>Sveiki! Čia rasite pagalbinę medžiagą, padėsiančią mokytis C++ programavimo kalbos. Medžiaga skirta Šeštadieninės Informatikos Olimpiadininkų Mokyklos jaunesniųjų grupės moksleiviams.</p><p><strong>Pastaba.</strong> Medžiaga vis dar ruošiama, tad ne visi skyriai baigti. Jei rasite netikslumų / neaiškumų / klaidų - praneškite <i class="far fa-smile"></i></p>
+title_image: "https://imgur.com/bQ62w5B.png"
+github_repository: https://github.com/vstrimaitis/siom-cpp
+post_limit: 5
+
+github_username:  vstrimaitis
+
+# Footer
+footer_left: Parengė Vytautas Strimaitis
+footer_right: <a href="mailto:vstrimaitis@gmail.com?Subject=[C++%20pagalba]%20Pasiūlymai" target="_top">vstrimaitis@gmail.com</a>
+
+# Build settings
+markdown: kramdown
+
+# https://github.com/jekyll/jekyll/issues/4619
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: c++
+    #block: # Adds linenos when using fenced block notation
+    #  line_numbers: true
+
+permalink: pretty
+exclude: [vendor]
+
+# Allow posts in the future
+future: true
