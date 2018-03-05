@@ -5,6 +5,7 @@ date:       2018-02-10 11:59:00
 author:     Vytautas Strimaitis
 summary:    Šis skyrius skirtas apžvelgti C++ simbolius - kaip jie saugomi atmintyje, kas yra ASCII bei kokių "triukų" galima panaudoti, dirbant su simboliais.
 categories: teorija
+permalink: /:title/
 thumbnail:  char
 ---
 # Simboliai
