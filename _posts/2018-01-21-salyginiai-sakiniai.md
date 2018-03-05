@@ -5,6 +5,7 @@ date:       2018-01-21 22:42:00
 author:     Vytautas Strimaitis
 summary:    Šis skyrius skirtas susipažinimui su sąlyginiais sakiniais ir kaip juos užrašyti C++ kalboje.
 categories: teorija
+permalink: /:title/
 thumbnail:  if
 ---
 # Sąlyginiai sakiniai
