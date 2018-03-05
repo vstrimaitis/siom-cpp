@@ -5,6 +5,7 @@ date:       2018-02-10 12:22:00
 author:     Vytautas Strimaitis
 summary:    Šiame skyriuje išmoksime dirbti su konsole.
 categories: teorija
+permalink: /:title/
 thumbnail:  terminal
 ---
 # Darbas su konsole
