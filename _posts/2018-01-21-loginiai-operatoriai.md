@@ -5,6 +5,7 @@ date:       2018-01-21 23:32:00
 author:     Vytautas Strimaitis
 summary:    Šiame skyriuje apžvelgiami C++ loginiai operatoriai.
 categories: teorija
+permalink: /:title/
 thumbnail:  logical
 ---
 # Loginiai operatoriai
