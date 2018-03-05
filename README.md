@@ -4,5 +4,7 @@ Sveiki! Čia rasite pagalbinę medžiagą, padėsiančią mokytis C++ programavi
 
 **Pastaba.** Medžiaga vis dar ruošiama, tad ne visi skyriai baigti. Jei rasite netikslumų / neaiškumų / klaidų - praneškite :)
 
+Medžiaga pasiekiama [čia](https://vstrimaitis.github.io/siom-cpp/).
+
 ---
 Medžiagą paruošė, pildo ir atnaujina Vytautas Strimaitis (vstrimaitis@gmail.com), 2018
