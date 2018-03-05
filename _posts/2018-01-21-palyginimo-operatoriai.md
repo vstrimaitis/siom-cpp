@@ -5,6 +5,7 @@ date:       2018-01-21 23:50:00
 author:     Vytautas Strimaitis
 summary:    Šiame skyriuje apžvelgsime palyginimo operatorius, kuriuos palaiko C++ programavimo kalba.
 categories: teorija
+permalink: /:title/
 thumbnail:  comparison
 ---
 # Palyginimo operatoriai
