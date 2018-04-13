@@ -52,7 +52,7 @@ int main() {
 
 **PASTABA.** Failai `duomenys.txt` bei `rezultatai.txt` turi būti tame pačiame kataloge, kaip ir jūsų programa.
 
-Kaip galima pastebėti, darbas su failais yra labai panašus į darbą su konsole (daugiau apie tai [čia]({{ site.baseurl }}{% post_url 2018-02-10-darbas-su-konsole %})). Svarbu tik nepamiršti šių dalykų:
+Kaip galima pastebėti, darbas su failais yra labai panašus į darbą su konsole (daugiau apie tai [čia]({{ site.baseurl }}{% post_url 2018-02-10-darbas-su-konsole %})) - tereikia vietoj `cin` ir `cout` naudoti savo apsirašytus failų identifikatorius (šiuo atveju - `fin` ir `fout`). Svarbu tik nepamiršti šių dalykų:
 1. Nesumaišyti `ifstream` su `ofstream`. `ifstream` skirtas duomenų nuskaitymui (nes `i = input`), o `ofstream` - duomenų išvedimui (nes `o = output`).
 1. Nurodyti failą, su kuriuo norime dirbti (t.y. rašant `ifstream fin ("failas.txt");` kai norime skaityti iš failo).
 1. Baigus darbą su failu, nepamiršti failo uždaryti (įvykdyti kodą `failoIdentifikatorius.close()`). Neuždarius failo, jis gali likti "užrakintas" ir jo keisti / ištrinti gali nebeleisti operacinė sistema.
