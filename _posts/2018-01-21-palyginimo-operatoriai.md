@@ -7,6 +7,7 @@ summary:    Šiame skyriuje apžvelgsime palyginimo operatorius, kuriuos palaiko
 categories: teorija
 permalink: /:title/
 thumbnail:  comparison
+iconclass:  fas fa-book
 ---
 # Palyginimo operatoriai
 Palyginimo operatoriai naudojami palyginti dvi reikšmes tarpusavyje. Šiame skyriuje apžvelgsime palyginimo operatorius, kuriuos palaiko C++ programavimo kalba.

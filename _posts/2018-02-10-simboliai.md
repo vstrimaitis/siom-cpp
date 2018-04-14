@@ -7,6 +7,7 @@ summary:    Šis skyrius skirtas apžvelgti C++ simbolius - kaip jie saugomi atm
 categories: teorija
 permalink: /:title/
 thumbnail:  char
+iconclass:  fas fa-book
 ---
 # Simboliai
 Šis skyrius skirtas apžvelgti C++ simbolius - kaip jie saugomi atmintyje, kas yra ASCII bei kokių "triukų" galima panaudoti, dirbant su simboliais.

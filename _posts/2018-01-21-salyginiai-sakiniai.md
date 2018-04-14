@@ -7,6 +7,7 @@ summary:    Šis skyrius skirtas susipažinimui su sąlyginiais sakiniais ir kai
 categories: teorija
 permalink: /:title/
 thumbnail:  if
+iconclass:  fas fa-book
 ---
 # Sąlyginiai sakiniai
 Šis skyrius skirtas susipažinimui su sąlyginiais sakiniais ir kaip juos užrašyti C++ kalboje.

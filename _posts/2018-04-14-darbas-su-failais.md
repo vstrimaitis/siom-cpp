@@ -7,6 +7,7 @@ summary:    Šiame skyriuje išmoksime dirbti su failais.
 categories: teorija
 permalink: /:title/
 thumbnail:  file
+iconclass:  fas fa-book
 published: true
 ---
 # Darbas su failais

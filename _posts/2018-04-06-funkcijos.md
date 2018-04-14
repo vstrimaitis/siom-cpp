@@ -7,6 +7,7 @@ summary:    Šis skyrius skirtas susipažinti su funkcijomis C++ programavimo ka
 categories: teorija
 permalink: /:title/
 thumbnail:  function
+iconclass:  fas fa-book
 ---
 # Funkcijos
 Šis skyrius skirtas susipažinti su **funkcijomis** C++ programavimo kalboje.

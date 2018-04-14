@@ -7,6 +7,7 @@ summary:    Šiame skyriuje išmoksime dirbti su konsole.
 categories: teorija
 permalink: /:title/
 thumbnail:  terminal
+iconclass:  fas fa-book
 ---
 # Darbas su konsole
 Konsolė - tai pirmas ir dažniausiai pradedančiųjų programuotojų naudojamas įrankis bendravimui su naudotoju. Šiame skyriuje apžvelgsime, kaip C++ programavimo kalboje išspausdinti duomenis į konsolę bei nuskaityti naudotojo įvestus duomenis iš konsolės.

@@ -7,6 +7,7 @@ summary:    Šiame skyriuje apžvelgiami C++ loginiai operatoriai.
 categories: teorija
 permalink: /:title/
 thumbnail:  logical
+iconclass:  fas fa-book
 ---
 # Loginiai operatoriai
 Šiame skyriuje apžvelgiami C++ loginiai operatoriai.
