@@ -11,7 +11,7 @@ iconclass:  fas fa-book # TODO: change this
 published: true
 ---
 # Struktūros
-C++ kalboje yra nemažai bazinių, o visoje standartinėje bibliotekoje - ir gana sudėtingų tipų. Tačiau būna atvejų, kuomet jų nepakanka. Tokiose situacijose galima pasinaudoti **struktūromis** - C++ kalbos dalimi, leidžiančia apsirašyti savo duomenų struktūras ir juos naudoti kaip bet kurį kitą tipą.
+C++ kalboje yra nemažai bazinių, o visoje standartinėje bibliotekoje - ir gana sudėtingų tipų. Tačiau būna atvejų, kuomet jų nepakanka. Tokiose situacijose galima pasinaudoti **struktūromis** - C++ kalbos dalimi, leidžiančia apsirašyti savo duomenų struktūras ir jas naudoti kaip bet kurį kitą tipą.
 
 ## Problema
 Tarkime, sprendžiame uždavinį, kuriame mums pateikiamas sąrašas iš `N` taškų su tam tikromis koordinatėmis, o mums reikia atrinkti tik tokius taškus, kurių abi koordinatės yra griežtai mažesnės už tam tikrą skaičių `C`. Vienas galimas šio uždavinio sprendimas būtų toks:
@@ -41,7 +41,7 @@ int main() {
 Uždavinio sprendimas atrodo gan paprastas, tačiau už akies gali užkliūti viena detalė - taškams laikyti mums prireikė dviejų masyvų. Kadangi taškas yra viena esybė (tik sudaryta iš dviejų skaičių poros), norėtųsi ir masyvą turėti vieną, kur kiekvienas elementas aprašytų vieną tašką. Čia į pagalbą ateina struktūros.
 
 ## Kas yra struktūra
-C++ kalba leidžia apsirašyti savus duomenų tipus, vadinamis struktūromis. Aprašymo sintaksė yra tokia:
+C++ kalba leidžia apsirašyti savus duomenų tipus, vadinamus struktūromis. Aprašymo sintaksė yra tokia:
 
 {% highlight c++ %}
 struct Pavadinimas {
@@ -69,7 +69,7 @@ Po to, kai apsirašėme struktūrą, galime ją naudoti kaip bet kokį kitą duo
 Taskas t;
 {% endhighlight %}
 
-Struktūros tipo kintamųjų narių reikšmės galima pasiekti naudojant *taško* operatorių. Taigi, jei norime nurodyti, kad taško `t` koordinatės yra `(4, 6)`, galime parašyti taip:
+Struktūros tipo kintamųjų narių reikšmės galima pasiekti naudojant *taško* (`.`) operatorių. Taigi, jei norime nurodyti, kad taško `t` koordinatės yra `(4, 6)`, galime parašyti taip:
 
 {% highlight c++ %}
 Taskas t;
@@ -156,4 +156,8 @@ int main() {
 {% endhighlight %}
 
 ## Apibendrinimas
-Nors daugelį uždavinių įmanoma išspręsti naudojant vien primityvius duomenų tipus, struktūros dažnai palengvina programuotojo darbą. Šiame uždavinyje, kaip matėme, buvo galima išsiversti be struktūrų gana nesunkiai, tačiau jei uždavinį kiek pakeistume - būtų gerokai sunkiau. Tarkime, kad dabar vėl gauname sąrašą taškų, tačiau dabar juos norime išrikiuoti pagal `x` koordinatę, o jei `x` koordinatės lygios - pagal `y` koordinatę. Šį uždavinį išspręsti be struktūrų būtų tikrai nemažas galvos skausmas, tačiau naudojantis struktūromis jis beveik nesiskiria nuo jau matyto skaičių rikiavimo. Sprendimo idėja - apsirašyti struktūrą, laikančią taško koordinates ir turinčią funkciją `bool arMazesnisUz(Taskas kitas)`, kuri atsakytų, ar šis taškas yra mažesnis už tašką `kitas` (palygina pagal `x` koordinates, jei jos nelygios, ir pagal `y`, jei lygios). Tada, turint tokių taškų masyvą galima nesunkiai tarpusavyje palyginti du taškus, o tai leidžia ir turimą masyvą išrikiuoti.
+Nors daugelį uždavinių įmanoma išspręsti naudojant vien primityvius duomenų tipus, struktūros dažnai palengvina programuotojo darbą. Šiame uždavinyje, kaip matėme, buvo galima išsiversti be struktūrų gana nesunkiai, tačiau jei uždavinį kiek pakeistume - būtų gerokai sunkiau.
+
+Tarkime, kad dabar vėl gauname sąrašą taškų, tačiau dabar juos norime išrikiuoti pagal `x` koordinatę, o jei `x` koordinatės lygios - pagal `y` koordinatę. Šį uždavinį išspręsti be struktūrų būtų tikrai nemažas galvos skausmas, tačiau naudojantis struktūromis jis beveik nesiskiria nuo jau matyto skaičių rikiavimo.
+
+Sprendimo idėja - apsirašyti struktūrą, laikančią taško koordinates ir turinčią funkciją `bool arMazesnisUz(Taskas kitas)`, kuri atsakytų, ar šis taškas yra mažesnis už tašką `kitas` (palygina pagal `x` koordinates, jei jos nelygios, ir pagal `y`, jei lygios). Tada, turint tokių taškų masyvą galima nesunkiai tarpusavyje palyginti du taškus, o tai leidžia ir turimą masyvą išrikiuoti.
