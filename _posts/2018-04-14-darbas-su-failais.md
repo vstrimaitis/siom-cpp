@@ -32,6 +32,7 @@ Tarkime, turime tokį uždavinį: faile `duomenys.txt` yra įrašyti du sveikiej
 
 {% highlight c++ %}
 #include <fstream>
+using namespace std;
 
 int main() {
     int a, b;
