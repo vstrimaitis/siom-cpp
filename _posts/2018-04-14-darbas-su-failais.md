@@ -6,7 +6,7 @@ author:     Vytautas Strimaitis
 summary:    Šiame skyriuje išmoksime dirbti su failais.
 categories: teorija
 permalink: /:title/
-thumbnail:  file
+thumbnail:  curly
 iconclass:  fas fa-book
 published: true
 ---
