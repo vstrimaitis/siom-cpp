@@ -6,8 +6,8 @@ author:     Vytautas Strimaitis
 summary:    Šiame skyriuje išmoksime, kas yra struktūros ir kaip jomis naudotis.
 categories: teorija
 permalink: /:title/
-thumbnail:  file
-iconclass:  fas fa-book # TODO: change this
+thumbnail:  curly
+iconclass:  fas fa-book
 published: true
 ---
 # Struktūros

@@ -6,7 +6,7 @@ author:     Vytautas Strimaitis
 summary:    Šiame skyriuje išmoksime dirbti su failais.
 categories: teorija
 permalink: /:title/
-thumbnail:  curly
+thumbnail:  file
 iconclass:  fas fa-book
 published: true
 ---
@@ -32,7 +32,6 @@ Tarkime, turime tokį uždavinį: faile `duomenys.txt` yra įrašyti du sveikiej
 
 {% highlight c++ %}
 #include <fstream>
-using namespace std;
 
 int main() {
     int a, b;
