@@ -6,7 +6,7 @@ author:     Vytautas Strimaitis
 summary:    Šiame skyriuje susipažinsime su standartinėmis C++ duomenų struktūromis
 categories: teorija
 permalink: /:title/
-thumbnail:  quote # TODO: change
+thumbnail:  tree
 iconclass:  fas fa-book
 published: true
 ---
