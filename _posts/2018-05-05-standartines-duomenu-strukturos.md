@@ -14,7 +14,7 @@ published: true
 Kompiuterių moksle **duomenų struktūra** - tai būdas laikyti ar grupuoti duomenis taip, kad darbas su jais būtų kiek įmanoma efektyvesnis. Duomenų struktūrų yra labai įvairių. Vienos iš jų geriau tinka vieniems atvejams, kitos kitiems. Šiame skyriuje susipažinsime su keliomis C++ standartinėje bibliotekoje esančiomis naudingomis duomenų struktūromis.
 
 # C++ standartinės duomenų struktūros
-Su viena iš standartinių duomenų jau susipažinome anksčiau. Tai - masyvai. Jie tinka tiem atvejam, kuomet iš anksto žinome, kiek bus elementų ir kai mums su jais nereikės atlikti per daug sudėtingų operacijų. Tačiau masyvų ne visada užtenka - būna uždavinių, kuriuose su paprastais masyvai parašyti efektyvų sprendimą tiesiog per sunku ar net neįmanoma. Tokios situacijose praverčia kitos standartinės duomenų struktūros, kurias dabar ir apžvelgsime.
+Su viena iš standartinių duomenų jau susipažinome anksčiau. Tai - [masyvai]({{ site.baseurl }}{% post_url 2018-03-03-masyvai %}). Jie tinka tiem atvejam, kuomet iš anksto žinome, kiek bus elementų ir kai mums su jais nereikės atlikti per daug sudėtingų operacijų. Tačiau masyvų ne visada užtenka - būna uždavinių, kuriuose su paprastais masyvai parašyti efektyvų sprendimą tiesiog per sunku ar net neįmanoma. Tokios situacijose praverčia kitos standartinės duomenų struktūros, kurias dabar ir apžvelgsime.
 
 ## Dinaminis masyvas (`vector`)
 Viena paprastesnių standartinių duomenų struktūrų - dinaminis masyvas. Jis C++ kalboje aprašomas tipu `vector`. Jis nuo paprasto masyvo skiriasi tik vienu dalyku - jo dydžio nereikia nurodyti iš anksto, o dėti elementų galima kiek tik nori - masyvas auga priklausomai nuo elementų kiekio. Norint naudoti dinaminius masyvus savo programoje, reikia įsidėti biblioteką `vector`.
