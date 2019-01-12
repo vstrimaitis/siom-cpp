@@ -187,6 +187,9 @@ kodo rašymą bei palengvinančių skaitomumą. Čia aptarsime keletą iš jų.
    4. Supersedes: `-std=c++98 -std=c++0x`
 5. Spustelėkite `OK`
 6. Įsitikinkite, kad prie naujai pridėtos eilutės (su pavadinimu `Enable C++11 flag [-std=c++11]`) yra pažymėta varnelė.
+7. Pasirinkite skiltį `Toolchain executables`.
+8. Čia įsitikinkite, kad yra pasirinktas būtent Code::Blocks pateikiamas
+   kompiliatorius (`Compiler's installation directory` rodo į, pavyzdžiui, `C:\Codeblocks\MinGW`).
 
 ## Raktažodis auto
 Senesnėse C++ versijose šalia kintamojo visada buvo privaloma rašyti ir jo tipą.
