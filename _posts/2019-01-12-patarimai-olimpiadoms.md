@@ -124,7 +124,8 @@ funkcijos gali būti gana lėtos. Tačiau tai gali būti pataisyta `main` funkci
 
 {% highlight c++ %}
 ios_base::sync_with_stdio(false);
-cin.tie(nullptr);
+cin.tie(nullptr); // veiks tik tada, jei esate įsijungę C++11 režimą
+// kitu atveju naudoti: cin.tie(NULL);
 {% endhighlight %}
 
 Taip pat galima ir išnaudoti jau aptartą `#define` raktažodį:
