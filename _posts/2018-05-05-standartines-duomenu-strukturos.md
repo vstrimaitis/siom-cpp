@@ -1,22 +1,26 @@
 ---
-layout:     lesson
-title:      Standartinės duomenų struktūros
-date:       2018-05-05 11:58:00
-author:     Vytautas Strimaitis
-summary:    Šiame skyriuje susipažinsime su standartinėmis C++ duomenų struktūromis
+layout: lesson
+title: Standartinės duomenų struktūros
+date: 2018-05-05 11:58:00
+author: Vytautas Strimaitis
+summary: Šiame skyriuje susipažinsime su standartinėmis C++ duomenų struktūromis
 categories: teorija
 permalink: /:title/
-thumbnail:  tree
-iconclass:  fas fa-book
+thumbnail: tree
+iconclass: fas fa-book
 published: true
 ---
+
 # Kas yra duomenų struktūra
+
 Kompiuterių moksle **duomenų struktūra** - tai būdas laikyti ar grupuoti duomenis taip, kad darbas su jais būtų kiek įmanoma efektyvesnis. Duomenų struktūrų yra labai įvairių. Vienos iš jų geriau tinka vieniems atvejams, kitos kitiems. Šiame skyriuje susipažinsime su keliomis C++ standartinėje bibliotekoje esančiomis naudingomis duomenų struktūromis.
 
 # C++ standartinės duomenų struktūros
+
 Su viena iš standartinių duomenų jau susipažinome anksčiau. Tai - [masyvai]({{ site.baseurl }}{% post_url 2018-03-03-masyvai %}). Jie tinka tiem atvejam, kuomet iš anksto žinome, kiek bus elementų ir kai mums su jais nereikės atlikti per daug sudėtingų operacijų. Tačiau masyvų ne visada užtenka - būna uždavinių, kuriuose su paprastais masyvai parašyti efektyvų sprendimą tiesiog per sunku ar net neįmanoma. Tokios situacijose praverčia kitos standartinės duomenų struktūros, kurias dabar ir apžvelgsime.
 
 ## Dinaminis masyvas (`vector`)
+
 Viena paprastesnių standartinių duomenų struktūrų - dinaminis masyvas. Jis C++ kalboje aprašomas tipu `vector`. Jis nuo paprasto masyvo skiriasi tik vienu dalyku - jo dydžio nereikia nurodyti iš anksto, o dėti elementų galima kiek tik nori - masyvas auga priklausomai nuo elementų kiekio. Norint naudoti dinaminius masyvus savo programoje, reikia įsidėti biblioteką `vector`.
 
 Dinaminis masyvas aprašomas taip: `vector<tipas> pavadinimas`. Vietoje `tipas` reikia įrašyti tokį tipą, kokio bus masyve laikomi elementai. Pavyzdžiui, jei norime susikurti masyvą sveikųjų skaičių, aprašymas būtų `vector<int> skaiciai`.
@@ -29,11 +33,11 @@ Dinaminis masyvas aprašomas taip: `vector<tipas> pavadinimas`. Vietoje `tipas` 
 using namespace std;
 
 int main() {
-    vector<int> v;  // []
-    v.push_back(1); // [1]
-    v.push_back(3); // [1, 3]
-    v.push_back(2); // [1, 3, 2]
-    return 0;
+vector<int> v; // []
+v.push_back(1); // [1]
+v.push_back(3); // [1, 3]
+v.push_back(2); // [1, 3, 2]
+return 0;
 }
 {% endhighlight %}
 
@@ -47,12 +51,12 @@ Dinaminis masyvas pateikia ir dar vieną labai naudingą funkciją `size`, kuri 
 using namespace std;
 
 int main() {
-    vector<int> v;            // []
-    v.push_back(1);           // [1]
-    v.push_back(3);           // [1, 3]
-    v.push_back(2);           // [1, 3, 2]
-    cout << v.size() << endl; // 3
-    return 0;
+vector<int> v; // []
+v.push_back(1); // [1]
+v.push_back(3); // [1, 3]
+v.push_back(2); // [1, 3, 2]
+cout << v.size() << endl; // 3
+return 0;
 }
 {% endhighlight %}
 
@@ -64,24 +68,27 @@ Dinaminis masyvas, kaip ir paprastas, leidžia indeksuoti elementus, t.y. pasiek
 using namespace std;
 
 int main() {
-    vector<int> v;        // []
-    v.push_back(1);       // [1]
-    v.push_back(3);       // [1, 3]
-    v.push_back(2);       // [1, 3, 2]
-    cout << v[0] << endl; // 1
-    v[0] = 5;             // [5, 3, 2]
+vector<int> v; // []
+v.push_back(1); // [1]
+v.push_back(3); // [1, 3]
+v.push_back(2); // [1, 3, 2]
+cout << v[0] << endl; // 1
+v[0] = 5; // [5, 3, 2]
 
     for(int i = 0; i < v.size(); i++) {
         cout << v[i] << " "; // 5 3 2
     }
     return 0;
+
 }
 {% endhighlight %}
 
 Dinaminis masyvas naudingas tuomet, kai iš anksto nežinome, kiek elementų mums reikės saugoti, tačiau vis dar tinka visos paprasto masyvo galimybės.
 
 ## Aibė (`set`)
-Aibė (angl. *set*) - tai duomenų struktūra, leidžianti greitai įterpti elementus ir laikyti juos taip, kad:
+
+Aibė (angl. _set_) - tai duomenų struktūra, leidžianti greitai įterpti elementus ir laikyti juos taip, kad:
+
 1. Elementai būtų išrikiuoti didėjimo tvarka
 2. Visi elementai būtų skirtingi
 
@@ -93,21 +100,23 @@ Aibė (angl. *set*) - tai duomenų struktūra, leidžianti greitai įterpti elem
 using namespace std;
 
 int main() {
-    set<int> aibe;               // {}
-    aibe.insert(1);              // {1}
-    aibe.insert(2);              // {1, 2}
-    aibe.insert(0);              // {0, 1, 2}
-    aibe.insert(1);              // {0, 1, 2}
+set<int> aibe; // {}
+aibe.insert(1); // {1}
+aibe.insert(2); // {1, 2}
+aibe.insert(0); // {0, 1, 2}
+aibe.insert(1); // {0, 1, 2}
 
     cout << aibe.size() << endl; // 3
 
     return 0;
+
 }
 {% endhighlight %}
 
 Kaip matome, aibėje visi elementai visada laikomi išrikiuota tvarka, o bandant įdėti jau egzistuojantį elementą aibė tiesiog nepakinta. Šios savybės labai naudingos uždaviniams, kuomet svarbus elementų unikalumas. Tačiau aibės turi ir vieną didelį minusą - jų negalima indeksuoti kaip masyvų. Taigi, kodas `cout << aibe[0] << endl;` sukeltų kompiliavimo klaidą. Tiesa, iteruoti per aibes įmanoma, tačiau to šioje pamokoje nepaliesime.
 
 ## Asociatyvus masyvas (`map`)
+
 Dar viena labai naudinga duomenų struktūra - asociatyvus masyvas. Dažnai būna uždavinių, kuomet atrodytų, kad reikia naudoti masyvą, tačiau kaip indeksą reiktų naudoti arba skaičius, bet nebūtinai nuo 0 ir einančius iš eilės, arba išvis ne skaičius. Tokiose situacijose praverčia asociatyvus masyvai, kuriuos C++ kalboje aprašo tipas `map`. Norint jais naudotis, į savo kodą reikia prisidėti biblioteką `map`. Asociatyvaus masyvo aprašas kiek skiriasi nuo iki šiol matytų duomenų struktūrų. Jis yra toks: `map<rakto_tipas, reiksmes_tipas> pavadinimas`. Kaip matome, dabar jau reikia nurodyti du tipus, o ne vieną. Pirmasis tipas (`rakto_tipas`) nurodo, kokio tipo bus šio asociatyvaus masyvo indeksai, o antrasis (`reiksmes_tipas`) - kokio tipo reikšmes laikysime.
 
 Panagrinėkime pavyzdį. Tarkime, kad mums reikia parašyti programą, kuriai bus įvedama kažkiek simbolių, o mes norime atsakyti, kiek kartų matėme simbolį `'a'`. Tokį uždavinį spręstų ši programa:
@@ -118,13 +127,13 @@ Panagrinėkime pavyzdį. Tarkime, kad mums reikia parašyti programą, kuriai bu
 using namespace std;
 
 int main() {
-    map<char, int> kiek; // raktas bus simbolis, o reikšmė - skaičius, nurodantis, kiek kartų ši simbolį matėme
-    char c;
-    while(cin >> c) { // skaitome po vieną simbolį iki galo
-        kiek[c]++;    // pasižymime, kad šį simbolį matėme dar vieną kartą
-    }
-    cout << kiek['a'] << endl; // išspausdiname, kiek kartų matėme simbolį 'a'
-    return 0;
+map<char, int> kiek; // raktas bus simbolis, o reikšmė - skaičius, nurodantis, kiek kartų ši simbolį matėme
+char c;
+while(cin >> c) { // skaitome po vieną simbolį iki galo
+kiek[c]++; // pasižymime, kad šį simbolį matėme dar vieną kartą
+}
+cout << kiek['a'] << endl; // išspausdiname, kiek kartų matėme simbolį 'a'
+return 0;
 }
 {% endhighlight %}
 

@@ -20,6 +20,7 @@ paieškojus Google :). Šiame puslapyje bus aptariama:
 - [endl prieš "\n"](#endl-prieš-n)
 - [Viena biblioteka visoms gyvenimo reikmėms](#viena-biblioteka-visoms-gyvenimo-reikmėms)
 - [Naudingi C++11 dalykai](#naudingi-c11-dalykai)
+  - [C++11 įjungimas per Code::Blocks](#c11-įjungimas-per-codeblocks)
   - [Raktažodis auto](#raktažodis-auto)
   - [Naujas for ciklas](#naujas-for-ciklas)
 - ["algorithm" biblioteka](#algorithm-biblioteka)
@@ -174,6 +175,18 @@ kompiliatoriaus, tačiau Code::Blocks šį kompiliatorių naudoja kaip numatytą
 # Naudingi C++11 dalykai
 Nuo C++ 11 versijos kalboje atsirado nemažai naudingų dalykų, paspartinančių
 kodo rašymą bei palengvinančių skaitomumą. Čia aptarsime keletą iš jų.
+
+## C++11 įjungimas per Code::Blocks
+1. Viršutiniame meniu rinkitės `Settings -> Compiler`.
+2. Atsidariusiame lange pasirinkite skiltį `Compiler settings`, o joje - `Compiler Flags`.
+3. Spustelėkite dešinį pelės mygtuką ant bet kurios eilutės, pasirinkite `New flag...`
+4. Atsidariusiame lange užpildykite tokią informaciją:
+   1. Name: `Enable C++11 flag`
+   2. Compiler flags: `-std=c++11`
+   3. Category: `Warnings`
+   4. Supersedes: `-std=c++98 -std=c++0x`
+5. Spustelėkite `OK`
+6. Įsitikinkite, kad prie naujai pridėtos eilutės (su pavadinimu `Enable C++11 flag [-std=c++11]`) yra pažymėta varnelė.
 
 ## Raktažodis auto
 Senesnėse C++ versijose šalia kintamojo visada buvo privaloma rašyti ir jo tipą.
