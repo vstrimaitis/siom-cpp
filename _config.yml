@@ -32,4 +32,4 @@ exclude: [vendor]
 
 # Allow posts in the future
 future: true
-theme: jekyll-theme-hacker
+theme: jekyll-theme-cayman
